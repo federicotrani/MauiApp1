@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.PrincipalPage"
+             Background="Aquamarine"
+             Title="PrincipalPage">    
+    
+    <VerticalStackLayout>
+
+        <Grid ColumnDefinitions=".25*,.25*,.25*,.25*"  RowDefinitions=".1*,.1*,.1*,.1*,.1*">
+
+            <Label Grid.Row="1" Grid.Column="2" Text="Etiqueta de Prueba" TextColor="#000000" />
+
+            <Entry Grid.Row="1" Grid.Column="3" />
+
+        </Grid>
+
+        <Button Text="" />
+
+        <Image Source="dron.png" WidthRequest="400" />
+        
+     
+
+
+    </VerticalStackLayout>
+</ContentPage>
