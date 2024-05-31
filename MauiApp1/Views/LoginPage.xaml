@@ -2,12 +2,45 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Views.LoginPage"
-             Background="Beige"
+             Background="Azure"
+             
              Title="LoginPage">
-    <VerticalStackLayout>
+    
+    <VerticalStackLayout Margin="10">
         <Label 
-            Text="Pagina de Login"
+            TextColor="DarkMagenta"
+            FontAttributes="Bold"
+            Text="Bienvenid@s"
+            FontSize="Large"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Image Source="dron.png" Margin="0,20" />
+
+        <Label Text="Ingrese su Email" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+        <Entry             
+            TextColor="Black" 
+            x:Name="entLoginEmail"
+            Placeholder="nombre@correo.com" 
+            HorizontalOptions="Center"/>
+
+        <Label Text="Ingrese su Password" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+        <Entry 
+            x:Name="entLoginPassword"
+            Placeholder="123456" 
+            IsPassword="True" 
+            TextColor="Black" 
+            HorizontalOptions="Center"/>
+
+        <Button 
+            TextColor="WhiteSmoke"
+            BackgroundColor="DarkBlue"
+            Text="INGRESAR" 
+            x:Name="btnLoginIngresar" 
+            Clicked="btnLoginIngresar_Clicked" 
+            Margin="0,20"/>
+        <ActivityIndicator />
+        <Label Text="ITES - 2024" TextColor="DarkBlue" HorizontalOptions="Center" FontSize="Micro" />
+
     </VerticalStackLayout>
 </ContentPage>
