@@ -11,4 +11,14 @@ public partial class PrincipalPage : ContentPage
     {
 		Navigation.PopAsync();
     }
+
+    private void btnPrincipalSalir_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync();
+    }
+
+    private void btnPrincipalAcerca_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AcercaPage());
+    }
 }

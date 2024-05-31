@@ -11,10 +11,14 @@ public partial class LoginPage : ContentPage
     {
 		if(entLoginEmail.Text=="ites" && entLoginPassword.Text == "1234")
 		{
+			entLoginPassword.Text = string.Empty;
+			entLoginEmail.Text = string.Empty;
 			Navigation.PushAsync(new PrincipalPage());
 		}else
 		{
-			DisplayAlert("Atención","las credenciales ingresadas no son válidas","OK");
+            entLoginPassword.Text = string.Empty;
+            entLoginEmail.Text = string.Empty;
+            DisplayAlert("Atención","las credenciales ingresadas no son válidas","OK");
 		}
     }
 }

@@ -5,21 +5,26 @@
              Background="Aquamarine"
              Title="PrincipalPage">    
     
-    <VerticalStackLayout>
+    <VerticalStackLayout Margin="10">
 
-        <Grid ColumnDefinitions=".25*,.25*,.25*,.25*"  RowDefinitions=".1*,.1*,.1*,.1*,.1*">
-
-            <Label Grid.Row="1" Grid.Column="2" Text="Etiqueta de Prueba" TextColor="#000000" />
-
-            <Entry Grid.Row="1" Grid.Column="3" />
-
-        </Grid>
-
-        <Button Text="" />
-
-        <Image Source="dron.png" WidthRequest="400" />
         
-     
+
+        <Image Source="buscador.png" WidthRequest="400" Margin="0,20"/>
+
+        <Button 
+            Clicked="btnPrincipalSalir_Clicked"
+            x:Name="btnPrincipalSalir"
+            Text="Salir" 
+            Background="Tomato" 
+            TextColor="White" 
+            Margin="0,10" />
+        <Button 
+            Clicked="btnPrincipalAcerca_Clicked"
+            x:Name="btnPrincipalAcerca"
+            Text="Acerca" 
+            Background="DarkOliveGreen" 
+            TextColor="White" 
+            Margin="0,10" />
 
 
     </VerticalStackLayout>
