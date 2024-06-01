@@ -43,7 +43,9 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" />
 
+		
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
@@ -59,6 +61,7 @@
 	  <None Remove="Resources\Images\buscador.svg" />
 	  <None Remove="Resources\Images\cofee.svg" />
 	  <None Remove="Resources\Images\dron.svg" />
+	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -69,8 +72,11 @@
 
 	<ItemGroup>
 	  <Folder Include="Models\" />
-	  <Folder Include="Resources\Splash\" />
 	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
