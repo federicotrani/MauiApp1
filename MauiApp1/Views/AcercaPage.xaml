@@ -7,7 +7,7 @@
         <Image Source="cofee.png" />
         <Label 
             Margin="0,20,0,0"
-            TextColor="White"
+            TextColor="Beige"
             Text="Bienvenido a NetMaui!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
