@@ -12,7 +12,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label Text="usuario@corre.com" TextColor="White" HorizontalOptions="Center" />
-        <Label Text="022-1526-156" TextColor="White" HorizontalOptions="Center" />
+        <Label Text="02954-1526-156" TextColor="White" HorizontalOptions="Center" />
         <Label Text="Santa Rosa - La Pampa - 2024" TextColor="White" HorizontalOptions="Center" />
 
         <Button Text="Volver" Margin="0,20" x:Name="btnAcercaVolver" Clicked="btnAcercaVolver_Clicked" />
